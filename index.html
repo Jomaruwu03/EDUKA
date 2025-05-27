@@ -27,17 +27,18 @@
 <body class="bg-white font-body">
 
   <!-- Barra superior -->
-  <div class="bg-[#EDE96B] text-black text-sm flex justify-between items-center px-4 py-3 font-bold">
+  <div class="bg-[#EDE96B] text-black text-sm flex justify-between items-center px-6 py-3 font-bold">
     <span>Cursos desde $19 MXN</span>
-    <div class="flex items-center gap-4">
-      <span class="hidden sm:inline">13:00:00 hrs restantes</span>
+    <div class="flex items-center gap-12">
+      <span class="hidden sm:inline mr-12">13:00:00 hrs restantes</span>
       <button class="bg-black text-white px-4 py-2 rounded-full text-xs sm:text-sm">Ver cursos en promoción</button>
       <button class="text-xl leading-none hover:opacity-70">&times;</button>
     </div>
   </div>
 
   <!-- Navbar -->
-  <nav class="bg-[#1C2A1B] text-white flex justify-between items-center px-4 sm:px-6 py-4 h-16 sm:h-20 relative">
+  <nav class="bg-[#1C2A1B] text-white flex justify-between items-center px-4 sm:px-6 h-20 md:h-[6rem] relative">
+
 
     <!-- Vista móvil: Solo hamburguesa y buscador -->
     <div class="md:hidden flex items-center gap-4 w-full">
@@ -61,43 +62,47 @@
     </div>
 
     <!-- Vista desktop: Logo -->
-    <div class="hidden md:block text-2xl sm:text-3xl font-title font-bold tracking-wider">EDUKA</div>
+    <div class="hidden md:block md:text-4xl text-9xl sm:text-3xl font-title font-bold tracking-wider">EDUKA</div>
 
     <!-- Menú de navegación -->
-    <div id="menu" class="hidden flex-col gap-6 absolute top-16 sm:top-20 left-0 w-full bg-[#1C2A1B] text-white px-6 py-4 z-50 md:static md:flex md:flex-row md:gap-16 md:bg-transparent md:w-auto md:p-0">
-      <a href="#" class="font-medium hover:text-gray-300 py-2 md:py-0">Cursos</a>
-      <a href="#" class="font-medium hover:text-gray-300 py-2 md:py-0">Blog</a>
-      <a href="#" class="font-medium hover:text-gray-300 py-2 md:py-0">Nosotros</a>
+    <div id="menu" class="hidden flex-col gap-6 absolute md:px-22 top-16 sm:top-20 left-0 w-full bg-[#1C2A1B] text-white px-6 py-4 z-50 md:static md:flex md:flex-row md:gap-16 md:bg-transparent md:w-auto md:p-0">
+      <a href="#" class="font-bold hover:text-gray-300 py-2 md:py-0">Cursos</a>
+      <a href="#" class="font-bold hover:text-gray-300 py-2 md:py-0">Blog</a>
+      <a href="#" class="font-bold hover:text-gray-300 py-2 md:py-0">Nosotros</a>
     </div>
 
     <!-- Zona de búsqueda y botones (solo desktop) -->
     <div class="hidden md:flex items-center gap-6">
-      <div class="relative w-64">
-        <input type="text"  class="pl-10 pr-4 py-2 rounded-full text-black w-full border-0 focus:outline-none focus:ring-2 focus:ring-white" />
-        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+      <div class="relative w-[20rem] mr-12 ">
+        <input type="text"  class="pl-10 pr-4 py-1 rounded-full text-black w-full border-0 focus:outline-none focus:ring-2 focus:ring-white" />
+        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-black">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
             <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </span>
       </div>
-      <button class="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors">Iniciar sesión</button>
-      <button class="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors">Unirse ahora</button>
+      <button class="border border-white border-2 text-white px-6 py- rounded-full font-bold hover:bg-white hover:text-black transition-colors">Iniciar sesión</button>
+      <button class="border border-white text-white px-6 rounded-full border-2  font-bold hover:bg-white hover:text-black transition-colors">Unirse ahora</button>
     </div>
 
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative bg-white min-h-[500px] sm:min-h-[700px] overflow-hidden">
+  <section class="relative bg-white min-h-[500px] sm:min-h-[800px] overflow-hidden">
 
     <!-- Fondo de papel -->
-    <img src="img/papel.avif" alt="Fondo papel" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-90">
+    <img src="img/papel.avif" alt="Fondo papel" class="absolute top-0 left-0 w-full h-[45rem] object-cover z-0 opacity-90">
 
-    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between px-4 sm:px-10 py-10 sm:py-20 max-w-7xl mx-auto">
+    <!-- Estrella en la parte inferior del fondo -->
+    <img src="img/Estrella.png" alt="Estrella decorativa"
+         class="absolute mr-[12rem] bottom-0 right-0 w-[50rem] h-auto z-5 pointer-events-none select-none transform translate-x-1/4 translate-y-1/4" />
+
+    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between px-4 sm:px-10 py-10 sm:py-40 max-w-7xl mx-auto">
 
       <!-- Texto -->
       <div class="mb-10 md:mb-0 max-w-xl z-30 relative w-full md:w-auto">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C2A1B] leading-tight mb-6 sm:mb-10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C2A1B]  leading-tight mb-6 sm:mb-10">
           Más de 1.000<br>
           cursos online<br>
           para creativos
@@ -107,41 +112,23 @@
         </button>
       </div>
 
-<!-- Imagen de la persona - Solo visible en desktop -->
-<div class="hidden md:block relative ml-20 z-30" style="width: 45rem; height: auto;">
-  <!-- Estrella detrás -->
-  <img src="img/Estrella.png" alt="Estrella decorativa"
-       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[32rem] z-0 pointer-events-none select-none" />
-  <!-- Persona al frente -->
-  <img src="img/magbg.png" alt="Persona creativa"
-       class="relative z-10 w-[45rem] h-auto" />
-</div>
+      <!-- Imagen de la persona - Solo visible en desktop -->
+      <div class="hidden md:block absolute  ml-[35rem] mt-[10rem] z-30" style="width: 70rem; height: auto;">
+        <!-- Persona al frente -->
+        <img src="img/magbg.png" alt="Persona creativa"
+             class="relative z-10  w-[56rem] h-auto right-0 bottom-0" />
+      </div>
 
     </div>
   </section>
 
 <!-- Tira morada al frente -->
-  <div class="w-full h-32 relative z-40 -mt-24">
+  <div class="w-full h-36 relative z-40 -mt-44">
     <img src="img/tiramorada.png" alt="Fondo decorativo inferior"
-         class="absolute inset-0 w-full h-full object-cover object-top" />
-  </div>
+         class="absolute inset-0 w-full h-full  " />
+  </div>
 
-  <script>
-    // Script para el menú móvil
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-    });
-
-    // Cerrar menú al hacer click en un enlace (mobile)
-    document.querySelectorAll('#menu a').forEach(link => {
-      link.addEventListener('click', function() {
-        if (window.innerWidth < 768) {
-          document.getElementById('menu').classList.add('hidden');
-        }
-      });
-    });
-  </script>
+  
 
 </body>
 </html>
