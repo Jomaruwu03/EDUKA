@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .font-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    /* Estrellas/rayos amarillos */
+    .star {
+      position: absolute;
+      background: #FDE047;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    
+    .ray {
+      position: absolute;
+      background: #FDE047;
+      transform-origin: center;
+    }
+  </style>
+</head>
+<body class="bg-white font-body">
+
+  <!-- Barra superior -->
+  <div class="bg-yellow-300 text-black text-sm flex justify-between items-center px-4 py-2 font-bold">
+    <span>Cursos desde $19 MXN</span>
+    <div class="flex items-center gap-4">
+      <span>13:00:00 hrs restantes</span>
+      <button class="bg-black text-white px-4 py-1 rounded-full">Ver cursos en promoción</button>
+      <button class="text-xl leading-none">&times;</button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-[#1C2A1B] text-white flex justify-between items-center px-6 py-4 h-24">
+    <div class="text-4xl font-title font-bold tracking-wider">EDUKA</div>
+    <div class="flex gap-24 items-center">
+      <a href="#" class="font-semibold">Cursos</a>
+      <a href="#" class="font-semibold">Blog</a>
+      <a href="#" class="font-semibold">Nosotros</a>
+    </div>
+    <div class="flex items-center gap-32">
+      <input type="text" placeholder="Buscar..." class="px-8 py-1 rounded-full text-black w-56" />
+      <button class="border border-white px-4 py-1 rounded-full">Iniciar sesión</button>
+      <button class="bg-white text-black px-4 py-1 rounded-full">Unirse ahora</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white min-h-[600px] overflow-hidden">
+    
+    <!-- Fondo de papel -->
+    <img src="img/papel.avif" alt="Fondo papel" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-90">
+
+    
+   
+
+    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between px-10 py-16 max-w-7xl mx-auto">
+
+      <!-- Texto -->
+      <div class="mb-10 md:mb-0 max-w-xl z-30 relative">
+        <h1 class="text-5xl font-bold text-[#1C2A1B] leading-tight mb-8">
+          Más de 1.000<br>
+          cursos online<br>
+          para creativos
+        </h1>
+        <button class="bg-yellow-300 text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition-colors">
+          Unirse ahora
+        </button>
+      </div>
+
+      <!-- Imagen del chico -->
+      <div class="relative ml-20 z-30">
+        <img src="img/magbg.png" alt="Persona creativa" class="relative z-10 w-[35rem] h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tira morada al frente -->
+  <div class="w-full h-32 relative z-40 -mt-8">
+    <img src="img/tiramorada.png" alt="Fondo decorativo inferior"
+         class="absolute inset-0 w-full h-full object-cover object-top" />
+  </div>
+
+</body>
+</html>
