@@ -1,0 +1,312 @@
+
+
+  <style>
+  body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f0f4f8;
+    }
+    
+    .infographic {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    }
+    
+    .wearable-icon {
+        transition: all 0.3s ease;
+    }
+    
+    .wearable-icon:hover {
+        transform: translateY(-5px);
+    }
+    
+    .benefit-card {
+        transition: all 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+        transform: scale(1.03);
+    }
+    
+    .reference {
+        transition: all 0.2s ease;
+    }
+    
+    .reference:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    .download-btn {
+        transition: all 0.3s ease;
+    }
+    
+    .download-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .modal {
+        transition: all 0.3s ease;
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+    
+    .pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+</style>
+        <!-- Header -->
+        <header class="text-center mb-12">
+             <script src="https://cdn.tailwindcss.com"></script>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">DISPOSITIVOS WEARABLES</h1>
+            <p class="text-xl md:text-2xl font-light">Tecnología que llevamos puesta</p>
+            <div class="w-24 h-1 bg-yellow-300 mx-auto mt-6"></div>
+        </header>
+        
+        <!-- Definition Section -->
+        <div class="bg-white/20 backdrop-blur-sm rounded-xl p-6 mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">¿Qué son?</h2>
+            <p class="text-lg">Dispositivos electrónicos inteligentes que se llevan sobre el cuerpo, ya sea como accesorios o como parte de la ropa, diseñados para recopilar datos, realizar seguimiento de actividades y proporcionar información en tiempo real.<sup>[1]</sup></p>
+        </div>
+        
+        <!-- Types of Wearables -->
+        <div class="mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Tipos de Wearables</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Smartwatch -->
+                <div class="wearable-icon bg-indigo-800/50 rounded-xl p-5 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="font-medium text-lg">Smartwatches</h3>
+                </div>
+                
+                <!-- Fitness Trackers -->
+                <div class="wearable-icon bg-indigo-800/50 rounded-xl p-5 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <h3 class="font-medium text-lg">Pulseras Fitness</h3>
+                </div>
+                
+                <!-- Smart Glasses -->
+                <div class="wearable-icon bg-indigo-800/50 rounded-xl p-5 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <h3 class="font-medium text-lg">Gafas Inteligentes</h3>
+                </div>
+                
+                <!-- Smart Clothing -->
+                <div class="wearable-icon bg-indigo-800/50 rounded-xl p-5 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <h3 class="font-medium text-lg">Ropa Inteligente</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Benefits -->
+        <div class="mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Beneficios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="benefit-card bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mb-2">Monitoreo de Salud<sup>[2]</sup></h3>
+                    <p>Seguimiento de ritmo cardíaco, calidad del sueño, niveles de oxígeno y más.</p>
+                </div>
+                
+                <div class="benefit-card bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mb-2">Productividad<sup>[3]</sup></h3>
+                    <p>Notificaciones, recordatorios y acceso rápido a información sin usar el teléfono.</p>
+                </div>
+                
+                <div class="benefit-card bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mb-2">Rendimiento Deportivo<sup>[4]</sup></h3>
+                    <p>Análisis de actividad física, métricas de entrenamiento y seguimiento de objetivos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistics -->
+        <div class="mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Datos Interesantes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-center">
+                        <div class="text-4xl font-bold mr-4">70%</div>
+                        <p class="text-lg">de los usuarios de wearables reportan mejoras en sus hábitos de salud<sup>[5]</sup></p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-center">
+                        <div class="text-4xl font-bold mr-4">2025</div>
+                        <p class="text-lg">Se espera que el mercado global de wearables alcance los $70 mil millones<sup>[6]</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Future -->
+        <div class="bg-white/20 backdrop-blur-sm rounded-xl p-6 mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">El Futuro de los Wearables<sup>[7]</sup></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="p-3">
+                    <h3 class="font-medium mb-2">Integración con IA</h3>
+                    <p class="text-sm">Asistentes personales más inteligentes y predictivos</p>
+                </div>
+                
+                <div class="p-3">
+                    <h3 class="font-medium mb-2">Diagnóstico Médico</h3>
+                    <p class="text-sm">Detección temprana de condiciones de salud</p>
+                </div>
+                
+                <div class="p-3">
+                    <h3 class="font-medium mb-2">Tecnología Implantable</h3>
+                    <p class="text-sm">Dispositivos más pequeños y menos invasivos</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- References -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-10">
+            <h2 class="text-xl font-semibold mb-4">Referencias IEEE</h2>
+            <div class="space-y-3 text-sm">
+                <div class="reference p-2 rounded-lg">
+                    <p>[1] J. Wei, "How wearable technology will change our lives," in IEEE Pervasive Computing, vol. 13, no. 4, pp. 92-95, 2014.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[2] S. Majumder, T. Mondal and M. J. Deen, "Wearable Sensors for Remote Health Monitoring," in IEEE Sensors Journal, vol. 17, no. 5, pp. 1321-1330, 2017.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[3] A. Rawassizadeh, B. A. Price and M. Petre, "Wearables: Has the Age of Smartwatches Finally Arrived?," in Communications of the ACM, vol. 58, no. 1, pp. 45-47, 2015.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[4] D. James, N. Petrone and A. Subic, "Wearable Technology for Elite Sports Performance and Biomechanics," in IEEE Transactions on Human-Machine Systems, vol. 49, no. 5, pp. 424-433, 2019.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[5] M. Swan, "Sensor Mania! The Internet of Things, Wearable Computing, Objective Metrics, and the Quantified Self 2.0," in Journal of Sensor and Actuator Networks, vol. 1, no. 3, pp. 217-253, 2012.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[6] P. Castillejo, J. F. Martínez, J. Rodríguez-Molina and A. Cuerva, "Integration of wearable devices in a wireless sensor network for an E-health application," in IEEE Wireless Communications, vol. 20, no. 4, pp. 38-49, 2013.</p>
+                </div>
+                <div class="reference p-2 rounded-lg">
+                    <p>[7] S. Park, K. Chung and S. Jayaraman, "Wearables: Fundamentals, Advancements, and a Roadmap for the Future," in Wearable Sensors: Fundamentals, Implementation and Applications, E. Sazonov and M. R. Neuman, Eds. Academic Press, pp. 1-23, 2021.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="mt-10 text-center text-sm opacity-80">
+            <p>© 2023 Infografía Educativa sobre Dispositivos Wearables</p>
+        </footer>
+    </div>
+</div>
+
+<!-- Download Modal -->
+<div id="downloadModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="modal bg-white rounded-lg p-8 max-w-md w-full mx-4 transform transition-all">
+        <div class="text-center">
+            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2" id="modalTitle">Preparando PDF...</h3>
+            <div class="mt-2">
+                <p class="text-sm text-gray-500" id="modalMessage">Estamos generando tu archivo PDF. Por favor espera un momento.</p>
+            </div>
+            <div class="mt-4 flex justify-center">
+                <div id="progressBar" class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div id="progressBarFill" class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <button id="closeModalBtn" class="hidden inline-flex justify-center px-4 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 focus:outline-none">
+                    Cerrar
+                </button>
+                <a id="downloadLink" href="#" download="Infografia_Dispositivos_Wearables.pdf" class="hidden inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none">
+                    Descargar PDF
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Download button functionality
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const modal = document.getElementById('downloadModal');
+        const progressBarFill = document.getElementById('progressBarFill');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalMessage = document.getElementById('modalMessage');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const downloadLink = document.getElementById('downloadLink');
+        
+        // Show modal
+        modal.classList.remove('hidden');
+        
+        // Simulate progress
+        let progress = 0;
+        const interval = setInterval(function() {
+            progress += 5;
+            progressBarFill.style.width = progress + '%';
+            
+            if (progress >= 100) {
+                clearInterval(interval);
+                
+                // Update modal content
+                modalTitle.textContent = '¡PDF Generado!';
+                modalMessage.textContent = 'Tu infografía está lista para descargar.';
+                
+                // Show download link and close button
+                closeModalBtn.classList.remove('hidden');
+                downloadLink.classList.remove('hidden');
+            }
+        }, 150);
+        
+        // Close modal functionality
+        closeModalBtn.addEventListener('click', function() {
+            modal.classList.add('hidden');
+        });
+        
+        // Download link functionality (simulated)
+        downloadLink.addEventListener('click', function(e) {
+            // In a real implementation, this would trigger the actual PDF download
+            // For this demo, we'll just close the modal after a brief delay
+            setTimeout(function() {
+                modal.classList.add('hidden');
+            }, 500);
+        });
+    });
+    
+    // Close modal if clicked outside
+    window.addEventListener('click', function(e) {
+        const modal = document.getElementById('downloadModal');
+        if (e.target === modal) {
+            modal.classList.add('hidden');
+        }
+    });
+</script>
